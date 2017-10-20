@@ -22,7 +22,7 @@
     }
   },
   "buildpacks": [
-    "https://github.com/Shopify/heroku-buildpack-awscli.git",
-    "heroku/ruby"
+    { "url": "https://github.com/Shopify/heroku-buildpack-awscli.git" },
+    { "url": "heroku/ruby" }
   ]
 }
