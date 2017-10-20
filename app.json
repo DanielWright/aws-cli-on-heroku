@@ -1,0 +1,28 @@
+{
+  "name": "AWS CLI on Heroku",
+  "description": "For quick remote access to the AWS CLI tool.",
+  "repository": "https://github.com/DanielWright/aws-cli-on-heroku",
+  "success_url": "/hi",
+  "env": {
+    "HEROKU_URL": {
+      "description": "The URL of this Heroku app.",
+      "value": "https://YOURAPPNAME.herokuapp.com"
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Set your AWS Access Key ID to enable S3 file storage. Leave blank to disable file uploads.",
+      "required": false
+    },
+    "AWS_ACCESS_SECRET_KEY": {
+      "description": "AWS Access Secret Key, if using S3 file storage.",
+      "required": false
+    },
+    "AWS_DEFAULT_REGION": {
+      "description": "Region of your S3 bucket on AWS, if using S3 file storage.",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    "https://github.com/Shopify/heroku-buildpack-awscli.git",
+    "heroku/ruby"
+  ]
+}
