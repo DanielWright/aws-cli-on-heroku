@@ -8,7 +8,7 @@
       "description": "Set your AWS Access Key ID to automatically configure the AWS CLI with your permissions.",
       "required": true
     },
-    "AWS_ACCESS_SECRET_KEY": {
+    "AWS_SECRET_ACCESS_KEY": {
       "description": "AWS Access Secret Key corresponding to your Access Key ID.",
       "required": true
     },
