@@ -9,15 +9,15 @@
       "value": "https://YOURAPPNAME.herokuapp.com"
     },
     "AWS_ACCESS_KEY_ID": {
-      "description": "Set your AWS Access Key ID to enable S3 file storage. Leave blank to disable file uploads.",
-      "required": false
+      "description": "Set your AWS Access Key ID to automatically configure the AWS CLI with your permissions.",
+      "required": true
     },
     "AWS_ACCESS_SECRET_KEY": {
-      "description": "AWS Access Secret Key, if using S3 file storage.",
-      "required": false
+      "description": "AWS Access Secret Key corresponding to your Access Key ID.",
+      "required": true
     },
     "AWS_DEFAULT_REGION": {
-      "description": "Region of your S3 bucket on AWS, if using S3 file storage.",
+      "description": "The default region to use in AWS.",
       "required": false
     }
   },
