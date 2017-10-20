@@ -4,10 +4,6 @@
   "repository": "https://github.com/DanielWright/aws-cli-on-heroku",
   "success_url": "/hi",
   "env": {
-    "HEROKU_URL": {
-      "description": "The URL of this Heroku app.",
-      "value": "https://YOURAPPNAME.herokuapp.com"
-    },
     "AWS_ACCESS_KEY_ID": {
       "description": "Set your AWS Access Key ID to automatically configure the AWS CLI with your permissions.",
       "required": true
